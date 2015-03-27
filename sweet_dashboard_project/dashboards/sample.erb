@@ -1,0 +1,36 @@
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">
+  google.load("visualization", "1", {packages:["corechart"]});
+</script>
+<% content_for :title do %>Orders<% end %>
+<div class="gridster">
+  <ul>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="user_count" data-view="Number" data-title="Current User Count" data-moreinfo="" data-prefix=""></div>
+    </li>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="pending" data-view="Number" data-title="Pending Orders" data-moreinfo="" data-prefix=""></div>
+    </li>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="auto" data-view="Number" data-title="Auto Orders" data-moreinfo="" data-prefix=""></div>
+    </li>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="web" data-view="Number" data-title="Web Orders" data-moreinfo="" data-prefix=""></div>
+    </li>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="phone" data-view="Number" data-title="Phone Orders" data-moreinfo="" data-prefix=""></div>
+    </li>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="purchased" data-view="Number" data-title="Purchased Orders" data-moreinfo="" data-prefix=""></div>
+    </li>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="invalid" data-view="Number" data-title="Ivalid Orders" data-moreinfo="" data-prefix=""></div>
+    </li>
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="mychart" data-view="GooglePie"  data-title="My Chart"></div>
+    </li>
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="mychart" data-view="GooglePie" data-is_3d="true" data-legend_position="none" data-colors="purple, black, blue, red" data-title="My Chart"></div>
+    </li>
+  </ul>
+</div>
